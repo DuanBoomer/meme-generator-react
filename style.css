@@ -3,66 +3,123 @@ html{
 }
 
 body{
+    background-color: wheat;
+    color: black;
     margin: 0px;
 }
 
 .navbar{
     display:flex;
-    background-color: #F55A5A;
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    justify-content:space-between;
     align-items: center;
-    font-size: 16px;
-    gap: 7px;
+    font-size: 13px;
 }
 
-
-.destination-info{
+.navbar > div{
     display: flex;
-    font-size: 11px;
-    margin: 20px;
-    color: #2B283A;
+    gap: 7px;
+    align-items: center;
 }
 
-.destination-img{
-    width: 125px;
-    height: 168px;
+.navbar > div > img{
+    width: 40px;
 }
 
-.destination-img > img{
+.title{
+    font-size: 17px;
+}
+
+main{
+    padding: 20px;
+}
+
+.form{
+    justify-content: center;
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px
+}
+
+.form-inputs{
+    border-radius: 7px;
+    border: 2px solid grey;
+    text-indent: 20px;
+}
+
+.form-button{
+    grid-column: 1 / -1;
+    border-radius: 7px;
+    border: 0px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+
+.meme{
+    position: relative;
+    /* background-color: red; */
+    width: 400px;
+}
+
+.meme-img{
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit:cover;
-    border-radius: 6px;
+    margin: 20px;
 }
 
-.location{
-    margin-right: 5px;
-    letter-spacing: 2px;
+.meme-top-text{
+    /* background-color: cyan; */
+    position: absolute;
+    text-align: center;
+    top: -10px;
+    left: 20%;
+    right: 10%;
+    color: white;
+    font-size: 3rem;
+    -webkit-text-stroke: black 2px;
 }
 
-.google-map-link{
-    color: #918E9B;
+.meme-bottom-text{
+    /* background-color: cyan; */
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 20%;
+    right: 10%;
+    color: white;
+    font-size: 3rem;
+    -webkit-text-stroke: black 2px;
 }
 
-.location-description{
-    margin-left: 15px;
+
+.window-button{
+    margin: 20px;
+    padding: 15px 40px;
+    border: solid 3px black;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight:600;
+    cursor: pointer;
+}
+
+.window-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    padding-top: 6rem;
 }
 
 
-.location-name{
-    margin: 7px 0px 16px 0px;
-}
 
-.dates{
-    font-weight: bold;
-}
 
-.about-location{
-    width: 220px;
-    font-weight: lighter;
-}
+
 
 
